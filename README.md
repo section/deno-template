@@ -1,4 +1,7 @@
 # Deploy a Deno App on Section Tutorial
+
+![workflow status](https://github.com/section/deno-tutorial/actions/workflows/workflows.yaml/badge.svg)
+
 This repo holds the sample code for usage with the tutorials hosted on Section.io's documentations.
 
 Refer to [Tutorials/Deno](https://www.section.io/docs/tutorials/frameworks/deno/) for detailed instructions on deploying to Section.
