@@ -1,29 +1,29 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deno
+  name: section-project-deployment
   labels:
-    app: deno
+    app: console-project
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: deno
+      app: console-project
   template:
     metadata:
       labels:
-        app: deno
+        app: console-project
     spec:
       containers:
-      - name: deno
-        image: ghcr.io/${IMAGE_NAME}:main
-        imagePullPolicy: Always
-        resources:
-          requests:
-            cpu: ".1"
-            memory: ".1Gi"
-          limits:
-            cpu: ".1"
-            memory: ".1Gi"
-        ports:
-        - containerPort: 1993
+        - name: console-project
+          image: ghcr.io/${IMAGE_NAME}:main
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: ".1"
+              memory: ".1Gi"
+            limits:
+              cpu: ".1"
+              memory: ".1Gi"
+          ports:
+            - containerPort: 1993
